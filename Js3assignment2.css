@@ -1,0 +1,108 @@
+.mainDiv{
+    height: 100vh;
+    margin: auto;
+    
+
+
+    
+    
+}
+#content{
+    margin-top: 10%;
+}
+#cover{
+    margin-left: 35vh;
+    width: 250vh;
+    height: 100vh;
+    margin-top: 5%;
+}
+#div0{
+    width: auto;
+    border: 1px solid green;
+}
+
+#div1{
+    width: 50%;
+    height: 50vh;
+    background-color: rgb(197, 201, 197);
+    padding-left: 15%;
+    
+    
+}
+
+   
+#div2{
+    display: flex;
+    width: 50%;
+    margin-top: 1.5%;
+}
+#div2_1{
+    width: 24.7%;
+    background-color: rgb(197, 201, 197);
+    text-align: center;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    
+}
+#div2_2{
+    width: 75%;
+    background-color:  rgb(40, 180, 40);
+    text-align: center;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    margin-left: 0.5%;
+    
+}
+#div3{
+    display: flex;
+    width: 50%;
+    margin-top: 1.5%;
+   
+}
+.infoBMI{
+    width: 26.5%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    font-weight: bold;
+}
+#div3_1{
+    background-color: rgb(235, 235, 55);
+    text-align: center;
+}
+#div3_2{
+    background-color: rgb(40, 180, 40);
+    margin-left: 0.5%;
+    text-align: center;
+}
+#div3_3{
+    background-color: rgb(269, 62, 0);
+    margin-left: 0.5%;
+    text-align: center;
+}
+#div3_4{
+    background-color: red;
+    margin-left: 0.5%;
+    text-align: center;
+}
+#stdOfUnit{
+    margin-left: 0.5%;
+    
+}
+#wtDivId{
+    margin-left: 0%;
+}
+#htDivId{
+    align-items: center;
+}
+#htInchDivId{
+    margin-left: 15%;
+}
+.spanClass{
+    margin-left: 7%;
+}
+span{
+    font-weight: bold;
+}
+label{
+    font-weight: bold;
+}
