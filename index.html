@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart BMI Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="container">
+    <h1>🤖 AI-Tailored BMI Calculator</h1>
+    
+    <div class="card">
+      <div class="form-group">
+        <label for="unitSelect">Units</label>
+        <select id="unitSelect" onchange="toggleUnitFields()">
+          <option value="metric">Metric (kg, cm)</option>
+          <option value="imperial">Imperial (lbs, ft/in)</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="weightId">Weight</label>
+        <input type="number" id="weightId" placeholder="Enter your weight" />
+      </div>
+
+      <div class="form-group" id="metricHeightGroup">
+        <label for="heightCmId">Height (cm)</label>
+        <input type="number" id="heightCmId" placeholder="e.g. 170" />
+      </div>
+
+      <div class="form-group hidden" id="imperialHeightGroup">
+        <label>Height (ft + in)</label>
+        <div class="height-inputs">
+          <input type="number" id="heightFtId" placeholder="Feet" />
+          <input type="number" id="heightInId" placeholder="Inches" />
+        </div>
+      </div>
+
+      <button onclick="calBMI()">Calculate BMI</button>
+
+      <div class="result" id="bmiResult">Your BMI will appear here</div>
+
+      <div class="info">
+        <div class="badge lightblue">Underweight &lt; 18.5</div>
+        <div class="badge green">Normal 18.5 - 24.9</div>
+        <div class="badge yellow">Overweight 25 - 29.9</div>
+        <div class="badge red">Obese ≥ 30</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

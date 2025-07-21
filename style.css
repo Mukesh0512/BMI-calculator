@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #1e1e2f, #2e2e42);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.01);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+input[type="number"],
+input[disabled],
+select {
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 0.75rem;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background-color: #ffffff10;
+  color: #fff;
+}
+
+.height-inputs {
+  display: flex;
+  gap: 0.5rem;
+}
+
+button {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  background-color: #5d60ef;
+  color: white;
+  border: none;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #4447e3;
+}
+
+.result {
+  margin-top: 1rem;
+  background-color: #191926;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  font-size: 1.2rem;
+  transition: background-color 0.4s ease, transform 0.3s ease;
+}
+
+.result:hover {
+  transform: scale(1.02);
+}
+
+.info {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.badge {
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  font-weight: 600;
+  font-size: 0.85rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Better color feedback for BMI categories */
+.lightblue { background-color: #4fc3f7; }         /* Underweight */
+.green     { background-color: #81c784; }         /* Normal */
+.yellow    { background-color: #ffb74d; color: #000; } /* Overweight */
+.orange    { background-color: #ffa726; }         /* Obese Level 1 */
+.red       { background-color: #e57373; }         /* Obese Level 2+ */
+
+.hidden {
+  display: none;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 500px) {
+  body {
+    padding: 1rem;
+  }
+
+  .card {
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+
